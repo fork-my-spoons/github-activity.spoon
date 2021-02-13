@@ -7,7 +7,7 @@ Shows 10 latests events for your github profile, similar to the event feed on gi
 # Installation
 
  - download and install [Hammerspoon](https://github.com/Hammerspoon/hammerspoon/releases/latest)
- - download and install [GitHub Spoon]()
+ - download and install [github-activity.spoon](https://github.com/fork-my-spoons/github-activity.spoon/raw/master/github-activity.spoon.zip)
  - open ~/.hammerspoon/init.lua and add following snippet:
 
 ```lua
