@@ -2,7 +2,7 @@
 
 ![screenshot](./screenshots/screenshot.png)
 
-Shows 10 latests events fot your github profile, similar to the event feed on github's landing page.
+Shows 10 latests events for your github profile, similar to the event feed on github's landing page.
 
 # Installation
 
@@ -12,11 +12,11 @@ Shows 10 latests events fot your github profile, similar to the event feed on gi
 
 ```lua
 -- GitHub
-hs.loadSpoon("github")
-spoon.github:setup({
-    username = 'streetturtle' -- your username goes here
+hs.loadSpoon('github-activity')
+spoon['github-activity']:setup({
+    username = 'streetturtle'
 })
-spoon.github:start()
+spoon['github-activity']:start()
 ```
 
 This app uses icons, to properly display them, install a [feather-font](https://github.com/AT-UI/feather-font) by [downloading](https://github.com/AT-UI/feather-font/raw/master/src/fonts/feather.ttf1) this .ttf font and installing it.
