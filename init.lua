@@ -81,7 +81,7 @@ local function updateMenu()
         local events = hs.json.decode(body)
         local menu = {}
         for _, event in ipairs(events) do
-            action_string = generate_action_string(event)
+            local action_string = generate_action_string(event)
             table.insert(menu, {
                 image = hs.image.imageFromURL(event.actor.avatar_url):setSize({w=32,h=32}),
                 title = hs.styledtext.new(event.actor.display_login .. ' ' .. action_string.action_string .. '\n' .. event.repo.name .. '\n')
