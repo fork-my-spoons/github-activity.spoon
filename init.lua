@@ -69,6 +69,11 @@ local function generate_action_string(event)
         icon = hs.styledtext.new(' ', { font = {name = 'feather', size = 12 }, color = {hex = '#8e8e8e'}})
     elseif (event.type == "CreateEvent") then
         action_string = 'created'
+    elseif (event.type == "PushEvent") then
+        action_string = 'pushed to'
+    elseif (event.type == "ReleaseEvent") then
+        action_string = 'released ' .. event.payload.release.name .. ' at '
+        icon = hs.styledtext.new(' ', { font = {name = 'feather', size = 12 }, color = {hex = '#8e8e8e'}})
     end
 
     return { action_string = action_string, link = link, icon = icon }
