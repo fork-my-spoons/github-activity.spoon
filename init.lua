@@ -59,7 +59,7 @@ local function generate_action_string(event)
         icon = hs.styledtext.new(' ', { font = {name = 'feather', size = 12 }, color = {hex = '#8e8e8e'}})
     elseif (event.type == "IssueCommentEvent") then
         action_string = event.payload.action == 'created' and 'commented in issue' or event.payload.action .. ' a comment in'
-        link = event.issue_url
+        link = event.payload.issue.html_url
         icon = hs.styledtext.new(' ', { font = {name = 'feather', size = 12 }, color = {hex = '#8e8e8e'}})
     elseif (event.type == "WatchEvent") then
         action_string = 'starred'
