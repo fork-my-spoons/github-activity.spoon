@@ -24,7 +24,7 @@ Shows 10 latest events for your github profile, similar to the event feed on git
    - Homebrew:
 
       ```brew install hammerspoon --cask```
- - download and install [github-activity.spoon](https://github.com/fork-my-spoons/github-activity.spoon/releases/download/v1.0/github-activity.spoon.zip)
+ - download [github-activity.spoon](https://github.com/fork-my-spoons/github-activity.spoon/releases/download/v1.0/github-activity.spoon.zip), unzip and double click on a .spoon file. It will be installed under ~/.hammerspoon/Spoons folder.
  - open ~/.hammerspoon/init.lua and add the following snippet:
 
 ```lua
