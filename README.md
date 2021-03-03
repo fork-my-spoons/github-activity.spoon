@@ -17,9 +17,15 @@ Shows 10 latest events for your github profile, similar to the event feed on git
 
 # Installation
 
- - download and install [Hammerspoon](https://github.com/Hammerspoon/hammerspoon/releases/latest)
+- install [Hammerspoon](http://www.hammerspoon.org/) - a powerfull automation tool for OS X
+   - Manually:
+
+      Download the [latest release](https://github.com/Hammerspoon/hammerspoon/releases/latest), and drag Hammerspoon.app from your Downloads folder to Applications.
+   - Homebrew:
+
+      ```brew install hammerspoon --cask```
  - download and install [github-activity.spoon](https://github.com/fork-my-spoons/github-activity.spoon/releases/download/v1.0/github-activity.spoon.zip)
- - open ~/.hammerspoon/init.lua and add following snippet:
+ - open ~/.hammerspoon/init.lua and add the following snippet:
 
 ```lua
 -- GitHub
