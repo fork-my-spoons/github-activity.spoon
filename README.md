@@ -7,6 +7,9 @@
   <a href="https://github.com/fork-my-spoons/github-activity.spoon/releases">
     <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/fork-my-spoons/github-activity.spoon/total">
   </a>
+  <a href="https://github.com/fork-my-spoons/github-activity.spoon/releases">
+   <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/fork-my-spoons/github-activity.spoon">
+  </a>
 </p>
 
 Shows 10 latest events for your github profile, similar to the event feed on github's landing page:
