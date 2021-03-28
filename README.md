@@ -12,7 +12,7 @@
   </a>
 </p>
 
-Shows 10 latest events for your github profile, similar to the event feed on github's landing page:
+Menu bar app for macOS which shows 10 latest events for a github profile, similar to the event feed on github's landing page:
 
 <p align="center">
   <img src="https://github.com/fork-my-spoons/github-activity.spoon/raw/master/screenshots/screenshot.png"/>
