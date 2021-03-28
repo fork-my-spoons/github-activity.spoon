@@ -16,11 +16,11 @@ Shows 10 latest events for your github profile, similar to the event feed on git
 
 <p align="center">
   <img src="https://github.com/fork-my-spoons/github-activity.spoon/raw/master/screenshots/screenshot.png"/>
-<p>
+</p>
 
 # Installation
 
-- install [Hammerspoon](http://www.hammerspoon.org/) - a powerfull automation tool for OS X
+- install [Hammerspoon](http://www.hammerspoon.org/) - a powerful automation tool for OS X
    - Manually:
 
       Download the [latest release](https://github.com/Hammerspoon/hammerspoon/releases/latest), and drag Hammerspoon.app from your Downloads folder to Applications.
