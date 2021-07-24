@@ -27,7 +27,7 @@ Menu bar app for macOS which shows 10 latest events for a github profile, simila
    - Homebrew:
 
       ```brew install hammerspoon --cask```
- - download [github-activity.spoon](https://github.com/fork-my-spoons/github-activity.spoon/releases/download/v1.0/github-activity.spoon.zip), unzip and double click on a .spoon file. It will be installed under ~/.hammerspoon/Spoons folder.
+ - download [github-activity.spoon](https://github.com/fork-my-spoons/github-activity.spoon/releases/latest/download/github-activity.spoon.zip), unzip and double click on a .spoon file. It will be installed under ~/.hammerspoon/Spoons folder.
  - open ~/.hammerspoon/init.lua and add the following snippet:
 
 ```lua
