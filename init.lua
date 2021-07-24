@@ -10,6 +10,7 @@ obj.license = "MIT - https://opensource.org/licenses/MIT"
 
 obj.indicator = nil
 obj.timer = nil
+obj.usernames = {}
 obj.username = nil
 obj.passowrd = nil
 
@@ -55,7 +56,7 @@ local function generate_action_string(event)
         icon = hs.styledtext.new(' ', { font = {name = 'feather', size = 12 }, color = {hex = '#8e8e8e'}})
     elseif (event.type == "IssuesEvent") then
         action_string = event.payload.action .. ' an issue in'
-        link = event.issue_url
+        link = event.payload.issue.html_url
         icon = hs.styledtext.new(' ', { font = {name = 'feather', size = 12 }, color = {hex = '#8e8e8e'}})
     elseif (event.type == "IssueCommentEvent") then
         action_string = event.payload.action == 'created' and 'commented in issue' or event.payload.action .. ' a comment in'
@@ -96,6 +97,22 @@ local function updateMenu()
         end
         
         table.insert(menu, { title = '-'})
+
+        local accounts_menu = {}
+
+        if (#obj.usernames > 1) then
+            for _, account in ipairs(obj.usernames) do
+                table.insert(accounts_menu, {
+                    title = account, 
+                    checked = account == obj.username,
+                    fn = function() 
+                        obj.username = account 
+                        updateMenu() 
+                    end})
+            end
+
+            table.insert(menu, { title = 'Accounts', menu = accounts_menu})
+        end
         table.insert(menu, { title = 'Refresh', fn = function() updateMenu() end})
 
         obj.indicator:setMenu(menu)
@@ -111,7 +128,8 @@ function obj:init()
 end
 
 function obj:setup(args)
-    self.username = args.username
+    self.usernames = args.usernames
+    self.username = args.usernames[1]
 end
 
 function obj:start()
